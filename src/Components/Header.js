@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FiMenu, FiX, FiChevronDown, FiChevronUp, FiHome, FiInfo, FiDollarSign, FiPhone } from 'react-icons/fi'; // Assuming you've imported the necessary icons
-import './Header.css'; // Assuming you have a separate CSS file for styling
+import { FiMenu, FiX, FiChevronDown, FiChevronUp, FiHome, FiInfo, FiDollarSign, FiPhone } from 'react-icons/fi';
+import './Header.css';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,12 +9,12 @@ const Header = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-    setIsServicesOpen(false); // Close services menu when main menu is toggled
+    setIsServicesOpen(false);
   };
 
   const closeMenu = () => {
     setIsOpen(false);
-    setIsServicesOpen(false); // Close services menu when main menu is closed
+    setIsServicesOpen(false);
   };
 
   const toggleServicesMenu = () => {
@@ -28,7 +28,7 @@ const Header = () => {
           <div className="flex items-center">
             <h1 className="text-xl font-bold md:text-center">NexusTax & Accounting Firm pty Ltd</h1>
           </div>
-          <nav className="md:hidden">
+          <nav className="md:hidden items-end">
             {isOpen ? (
               <button onClick={closeMenu}>
                 <FiX size={24} />

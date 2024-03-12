@@ -6,7 +6,7 @@ const Tax = () => {
     <div className="bg-gray-100 min-h-screen py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900">Tax Services</h2>
+          <h2 className="text-4xl lg:text-5xl mt-12 font-extrabold text-gray-900">Tax Services</h2>
           <p className="mt-4 text-lg lg:text-xl text-gray-500">Explore our tax-related services and solutions</p>
         </div>
         <div className="mt-12">
@@ -48,3 +48,4 @@ const Tax = () => {
 };
 
 export default Tax;
+

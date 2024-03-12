@@ -87,4 +87,32 @@
   .btn-primary:hover {
     background-color: #1c437f; /* or any other darker shade of the primary color */
   }
+  @media (max-width: 768px) {
+    .md:flex.md\:items-center.md\:w-auto.order-1.md\:ml-auto.md\:order-none {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      background-color: #1a202c; /* Adjust color as needed */
+      width: 70%; /* Adjust width as needed */
+      z-index: 1000; /* Ensure it's above other elements */
+      overflow-y: auto; /* Enable scrolling if content overflows */
+    }
+  
+    .md:flex.md\:items-center.md\:w-auto.order-1.md\:ml-auto.md\:order-none ul {
+      flex-direction: column;
+      padding-top: 40px; /* Adjust top padding as needed */
+      padding-bottom: 20px; /* Adjust bottom padding as needed */
+    }
+  
+    .md:flex.md\:items-center.md\:w-auto.order-1.md\:ml-auto.md\:order-none li {
+      margin-bottom: 20px; /* Adjust margin between items as needed */
+    }
+  
+    .absolute.bg-white.mt-2.py-4.px-4.rounded-md.shadow-lg {
+      top: 100%;
+      left: 0;
+      width: 100%; /* Ensure full width */
+    }
+  }
   

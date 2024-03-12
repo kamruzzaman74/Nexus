@@ -6,7 +6,7 @@ const Bus= () => {
     <div className="bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 min-h-screen py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-extrabold text-white">Australian Business Consulting Services</h2>
+          <h2 className="text-4xl lg:text-5xl font-extrabold text-white mt-12 sm:mt-30">Australian Business Consulting Services</h2>
           <p className="mt-4 text-lg lg:text-xl text-white">Unlock the potential of your business with our expert consulting services</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
