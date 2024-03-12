@@ -1,0 +1,58 @@
+@keyframes typing {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    animation: typing 3s forwards; /* Set forwards to keep the end state of the animation */
+}
+
+.hero-title {
+    animation: fadeInUp 2s ease-out; /* Add a fade-in animation */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Additional styles for larger screens */
+@media (min-width: 768px) {
+    .typing-animation {
+        font-size: 2rem; /* Adjust font size for medium screens */
+    }
+
+    .hero-title {
+        font-size: 4rem; /* Adjust font size for medium screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .typing-animation {
+        font-size: 2.5rem; /* Adjust font size for large screens */
+    }
+
+    .hero-title {
+        font-size: 5rem; /* Adjust font size for large screens */
+    }
+}
