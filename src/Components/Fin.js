@@ -4,10 +4,10 @@ import { FiBarChart2, FiTrendingUp, FiPieChart } from 'react-icons/fi';
 const Fin = () => {
   return (
     <div className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 min-h-screen flex justify-center items-center">
-      <div className="max-w-4xl text-center text-white">
-        <h1 className="text-4xl lg:text-6xl font-bold mt-30 mb-4">Welcome to NexusTax & Accounting Firm</h1>
+      <div className="max-w-4xl text-center text-white p-4 md:p-8">
+        <h1 className="text-4xl lg:text-6xl font-bold mt-12 md:mt-20 lg:mt-40 mb-4">Welcome to NexusTax & Accounting Firm</h1>
         <p className="text-lg lg:text-xl mb-8">Your trusted partner for tax and accounting solutions</p>
-        <div className="mt-12 md:mt-0 md:mt-30"> {/* Apply mt-30 class for phone view and no margin for desktop */}
+        <div className="mt-8 md:mt-12 lg:mt-20">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">Empowering Your Financial Success</h2>
           <p className="text-lg lg:text-xl mb-8">At NexusTax & Accounting Firm, we understand the challenges businesses face in managing their finances. That's why we offer a wide range of services tailored to meet your specific needs.</p>
           <p className="text-lg lg:text-xl mb-8">Whether you're looking for tax planning, financial reporting, or strategic financial advice, our team of experts is here to help you navigate the complexities of the financial world.</p>
@@ -35,6 +35,7 @@ const Fin = () => {
 };
 
 export default Fin;
+
 
 
 
