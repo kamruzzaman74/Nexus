@@ -27,7 +27,7 @@ function Home() {
         <Book />
         <Make />
         <TaxAgentComponent />
-   
+   <WhyChooseUs/>
       <Footer />
     </>
   );
