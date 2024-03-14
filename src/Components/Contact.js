@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FiPhone, FiMapPin, FiMail } from 'react-icons/fi';
 
 const Contact = () => {
+  const [isMessageSent, setIsMessageSent] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevents the default form submission behavior
+    // Your form submission logic goes here
+    
+    // Assuming the form submission is successful, set isMessageSent to true
+    setIsMessageSent(true);
+  };
+
   return (
     <div className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 min-h-screen py-12 px-4 sm:px-6 lg:px-8 mt-28">
       <div className="max-w-7xl mx-auto">
@@ -44,7 +54,12 @@ const Contact = () => {
         </div>
         {/* Contact Form */}
         <div className="mt-12">
-          <form className="bg-white p-8 rounded-lg shadow-lg">
+          {isMessageSent ? (
+            <div className="bg-green-200 text-green-800 p-4 rounded-lg mb-4">
+              Your message has been sent successfully!
+            </div>
+          ) : null}
+          <form className="bg-white p-8 rounded-lg shadow-lg" onSubmit={handleSubmit}>
             <h3 className="text-2xl font-semibold mb-4 text-gray-800">Send us a Message</h3>
             <div className="mb-4">
               <label htmlFor="name" className="block text-gray-800 mb-1">Name</label>
@@ -69,4 +84,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
 

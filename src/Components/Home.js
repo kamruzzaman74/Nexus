@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.css';
 import LandingPage from './landing page';
 import { FaAngleDoubleDown } from 'react-icons/fa';
-import ServiceCard from './ServiceCard';
+import Mart from './Mart';
 import Book from './Book';
 import Make from './Make';
 import TaxAgentComponent from './TaxAgentComponent';
@@ -23,7 +23,7 @@ function Home() {
       </div>
       <LandingPage />
     
-        <ServiceCard />
+        <Mart />
         <Book />
         <Make />
         <TaxAgentComponent />
